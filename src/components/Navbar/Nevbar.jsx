@@ -25,7 +25,7 @@ function Nevbar() {
 
   return (
     <>
-      <header className="relative" onMouseLeave={onHoverLeave}>
+      <header className="relative z-10" onMouseLeave={onHoverLeave}>
         <nav className="flex justify-between items-center bg-gray-800 text-white p-4">
           <div className="logo">LOGO</div>
 

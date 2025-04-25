@@ -5,7 +5,7 @@ import Home from "./pages/HomePage/Home";
 function AllComp() {
   return (
     <>
-      <Nevbar />
+      <Nevbar className="z-40" />
       <Home />
     </>
   );
