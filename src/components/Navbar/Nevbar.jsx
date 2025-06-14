@@ -25,7 +25,7 @@ function Nevbar() {
 
   return (
     <>
-      <header className="relative z-10" onMouseLeave={onHoverLeave}>
+      <header className="sticky top-0 z-10" onMouseLeave={onHoverLeave}>
         <nav className="flex justify-between items-center bg-gray-800 text-white p-4">
           <div className="logo">LOGO</div>
 
@@ -224,7 +224,9 @@ function Nevbar() {
 
           {/* Right Side Buttons (Desktop) */}
           <div className="hidden md:flex justify-between items-center space-x-4">
-            <button className="hover:text-gray-300 transition-colors">ICON</button>
+            <button className="hover:text-gray-300 transition-colors">
+              ICON
+            </button>
             <button
               onMouseEnter={() => handleItemInteraction("SEARCH")}
               onClick={() => handleItemInteraction("SEARCH")}

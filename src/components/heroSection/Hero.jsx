@@ -2,22 +2,23 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="h-[33rem] w-full bg-gray-500 ">
-      <div className="flex flex-wrap">
-        <div className="w-1/2 h-[45vh] bg-pink-400 "></div>
-        <div className="w-1/2 h-[45vh] bg-gray-400 "></div>
-        <div className="w-1/2 h-[45vh] bg-purple-400 "></div>
-        <div className="w-1/2 h-[45vh] bg-green-400 "></div>
+    <section className="w-full min-h-[60vh] h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 px-4">
+      <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-center drop-shadow-lg">
+        Welcome to Our Store
+      </h1>
+      <p className="text-lg md:text-2xl mb-10 text-center max-w-2xl mx-auto opacity-90">
+        Discover amazing products and unbeatable deals. Shop now and enjoy a
+        seamless experience!
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <button className="px-8 py-3 bg-white text-indigo-700 font-semibold rounded shadow hover:bg-indigo-100 hover:scale-105 transition-all duration-200">
+          Shop Now
+        </button>
+        <button className="px-8 py-3 bg-indigo-700 text-white font-semibold rounded shadow hover:bg-indigo-800 hover:scale-105 transition-all duration-200">
+          Learn More
+        </button>
       </div>
-      <div
-        className="h-2/3 w-1/2 bg-bg-white z-40 absolute top-[20.6%] left-[25%]"
-        style={{
-          clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-          background: "linear-gradient(45deg, #4f46e5, #7c3aed)",
-          boxShadow: "2px 3px 34px 4px rgba(0,0,0,0.75)",
-        }}
-      ></div>
-    </div>
+    </section>
   );
 }
 
